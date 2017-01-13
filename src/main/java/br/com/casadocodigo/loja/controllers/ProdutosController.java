@@ -91,6 +91,7 @@ public class ProdutosController {
 	@RequestMapping("/{id}")
 	@ResponseBody
 	public Produto detalheJSON(@PathVariable("id") Integer id){
+		System.out.println("oi");
 	    return produtoDao.find(id);
 	}
 	
